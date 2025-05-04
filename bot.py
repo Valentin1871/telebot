@@ -210,6 +210,7 @@ async def confirm_order(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 # --- Запуск ---
 def main():
+    print("Запускаємо бота...")
     app = Application.builder().token(TOKEN).build()
 
     main_handler = ConversationHandler(
